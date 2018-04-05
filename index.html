@@ -37,12 +37,12 @@
             <li class="nav-item">
               <a class="nav-link" href="#history">History</a>
             </li>
-            <li class="nav-item">
+            <!--<li class="nav-item">
               <a class="nav-link" href="#about">About</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#contact">Contact</a>
-            </li>
+            </li>-->
           </ul>
         </div>
       </div>
@@ -63,13 +63,15 @@
         <div class="row align-items-center">
           <div class="col-lg-6 order-lg-2">
             <div class="p-5">
-              <img class="img-fluid rounded-circle" src="img/UofI.jpg" alt="">
+              <img id="pentacrest" class="img-fluid rounded-circle" src="img/UofI.jpg" alt="">
             </div>
           </div>
           <div class="col-lg-6 order-lg-1">
-            <div class="p-5">
-              <h2 class="display-4">First attended The University of Iowa</h2>
-              <p>Here I studied Photonic Systems Egineering off and on, until deciding I needed a less traditional educational process.</p>
+            <div class="p-5 history-row">
+              <div id="UofI">
+                <h2 class="display-4">I tried the standard route.</h1>
+                <p class="non-display">After graduating high school, I studied Photonic Systems Engineering at the University of Iowa.  I did this for a couple years before deciding it just wasn't working for me.</p>
+              </div>
             </div>
           </div>
         </div>
@@ -79,38 +81,40 @@
     <section>
       <div class="container">
         <div class="row align-items-center">
-          <div class="col-lg-6">
+          <div class="col-lg-6 order-lg-1">
             <div class="p-5">
-              <img class="img-fluid" src="img/theTechAcademy.png" alt="">
+              <img id="gifford" class="img-fluid rounded-circle" src="img/GiffordPinchot.jpg" alt="">
             </div>
           </div>
-          <div class="col-lg-6">
-            <div class="p-5">
-              <h2 class="display-4">In Search of Something different, this is where I landed</h2>
-              <p>I am in the midst of their Software Development Bootcamp, aiming to finish before summer.</p>
+          <div class="col-lg-6 order-lg-2">
+            <div id='moving' class="p-5">
+              <h2 class="display-4">Embarked on a journey to find something new.</h2>
+              <p class="non-display">Around the new year, I got the opportunity to spread my wings from Eastern Iowa, and moved to Portland, Oregon.</p>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section id=about>
+    <section>
       <div class="container">
         <div class="row align-items-center">
           <div class="col-lg-6 order-lg-2">
             <div class="p-5">
-              <img class="img-fluid rounded-circle" src="img/GiffordPinchot.jpg" alt="">
+              <img id="theTechAcademy" class="img-fluid" src="img/theTechAcademy.png" alt="">
             </div>
           </div>
           <div class="col-lg-6 order-lg-1">
-            <div class="p-5">
-              <h2 class="display-4">Still newish to the Portland area</h2>
-              <p>I moved here after the new year, and spend all of my "free" time either hiking or reading.</p>
+            <div id='portland' class="p-5">
+              <h2 class="display-4">In Search of Something different...</h2>
+              <p class="non-display">When I came to this city, I had the hopes of finding a different kind of education.  That is exactly what I found at The Tech Academy.</p>
             </div>
           </div>
         </div>
       </div>
     </section>
+
+
 
     <!-- Footer -->
     <footer class="py-5 bg-black">
@@ -120,9 +124,31 @@
       <!-- /.container -->
     </footer>
 
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+      //Toggle info and headline about Iowa
+      $('#pentacrest').click(function(){
+        $('#UofI h2').toggleClass('non-display');
+        $('#UofI p').toggleClass('non-display');
+      });
+
+      //Toggle info and headline about moving
+      $('#gifford').click(function(){
+        $('#moving h2').toggleClass('non-display');
+        $('#moving p').toggleClass('non-display');
+      });
+
+      //Toggle info and headline about The Tech Academy
+      $('#theTechAcademy').click(function(){
+        $('#portland h2').toggleClass('non-display');
+        $('#portland p').toggleClass('non-display');
+      });
+
+    </script>
 
   </body>
 
