@@ -52,8 +52,8 @@
     <header class="masthead text-center text-white">
       <div class="masthead-content">
         <div class="container">
-          <h1 class="masthead-heading mb-0">Outside-The-Box Thinker</h1>
-          <h2 class="masthead-subheading mb-0">Will Blow Your Mind</h2>
+          <h1 class="masthead-heading mb-0">True Humanitarian</h1>
+          <h3 class="masthead-subheading mb-0">With a dash of pure innovation</h2>
         </div>
       </div>
     </header>
@@ -62,15 +62,16 @@
       <div class="container">
         <div class="row align-items-center">
           <div class="col-lg-6 order-lg-2">
-            <div class="p-5">
+            <div class="p-5" id="firstImage">
               <img id="pentacrest" class="img-fluid rounded-circle" src="img/UofI.jpg" alt="">
+              <img id="fiber" class="img-fluid rounded-circle non-display" src="img/fiber.jpg" >
             </div>
           </div>
           <div class="col-lg-6 order-lg-1">
             <div class="p-5 history-row">
               <div id="UofI">
                 <h2 class="display-4">I tried the standard route.</h1>
-                <p class="non-display">After graduating high school, I studied Photonic Systems Engineering at the University of Iowa.  I did this for a couple years before deciding it just wasn't working for me.</p>
+                <p class="non-display">After graduating high school, I studied Photonic Systems Engineering at the University of Iowa.  I did tried this off and on before realizing current Engineering practices aren't what I was meant to do.</p>
               </div>
             </div>
           </div>
@@ -82,14 +83,15 @@
       <div class="container">
         <div class="row align-items-center">
           <div class="col-lg-6 order-lg-1">
-            <div class="p-5">
-              <img id="gifford" class="img-fluid rounded-circle" src="img/GiffordPinchot.jpg" alt="">
+            <div class="p-5" id="secondImage">
+              <img id="boulder" class="img-fluid rounded-circle" src="img/boulder.jpg" alt="">
+              <img id="beach" class="img-fluid rounded-circle non-display" src="img/beach.jpg" alt"">
             </div>
           </div>
           <div class="col-lg-6 order-lg-2">
             <div id='moving' class="p-5">
               <h2 class="display-4">Embarked on a journey to find something new.</h2>
-              <p class="non-display">Around the new year, I got the opportunity to spread my wings from Eastern Iowa, and moved to Portland, Oregon.</p>
+              <p class="non-display">I spread my wings from everything I knew in Eastern Iowa, and found myself in Oregon.</p>
             </div>
           </div>
         </div>
@@ -130,14 +132,17 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 
     <script type="text/javascript">
-      //Toggle info and headline about Iowa
-      $('#pentacrest').click(function(){
+      //Change info, headline, and photo about Iowa
+      $('#firstImage').click(function(){
+        $('#pentacrest').toggleClass('non-display');
+        $('#fiber').toggleClass('non-display');
         $('#UofI h2').toggleClass('non-display');
         $('#UofI p').toggleClass('non-display');
       });
 
+
       //Toggle info and headline about moving
-      $('#gifford').click(function(){
+      $('#secondImage').click(function(){
         $('#moving h2').toggleClass('non-display');
         $('#moving p').toggleClass('non-display');
       });
