@@ -12,6 +12,10 @@ h6 {
   font-weight: 800 !important;
 }
 
+#third {
+  height: 385px;
+}
+
 .btn-xl {
   text-transform: uppercase;
   padding: 1.5rem 3rem;
