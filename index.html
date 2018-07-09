@@ -35,13 +35,13 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link" href="#past">History</a>
-            </li>
-            <!--<li class="nav-item">
-              <a class="nav-link" href="#present">Present</a>
+              <a class="nav-link" href="#info" onclick="showPast()">Past</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#future">Future</a>
+              <a class="nav-link" href="#present" onclick="showPresent()">Present</a>
+            </li>
+            <!--<li class="nav-item">
+              <a class="nav-link" href="#future" onclick="showFuture()">Future</a>
             </li>-->
           </ul>
         </div>
@@ -58,86 +58,167 @@
       </div>
     </header>
 
-    <div class="" id="past">
-      <section>
-        <div class="container" id="first">
-          <div class="row align-items-center">
-            <div class="col-lg-6 order-lg-2">
-              <div class="p-5">
-                <img id="pentacrest" class="img-fluid rounded-circle" src="img/UofI.jpg" alt="">
-                <img id="fiber" class="img-fluid rounded-circle non-display" src="img/fiber.jpg" >
+    <div class="container" id="info">
+      <div class="container" id="past">
+        <section>
+          <div class="container" id="pastFirst">
+            <div class="row align-items-center">
+              <div class="col-lg-6 order-lg-2">
+                <div class="p-5">
+                  <img id="pentacrest" class="img-fluid rounded-circle" src="img/UofI.jpg" alt="">
+                  <img id="fiber" class="img-fluid rounded-circle non-display" src="img/fiber.jpg" >
+                </div>
               </div>
-            </div>
-            <div class="col-lg-6 order-lg-1">
-              <div class="p-5 history-row">
-                <div>
-                  <h2 id="UofIHead" class="display-4">I tried the standard route.</h1>
-                  <p id="UofIP" class="non-display">After graduating high school, I studied Photonic Systems Engineering at the University of Iowa.  I tried this off and on before realizing current Engineering practices aren't what I was meant to do.</p>
+              <div class="col-lg-6 order-lg-1">
+                <div class="p-5 history-row">
+                  <div>
+                    <h2 id="UofIHead" class="display-4">I tried the standard route.</h1>
+                    <p id="UofIP" class="non-display">After graduating high school, I studied Photonic Systems Engineering at the University of Iowa.  I tried this off and on before realizing current Engineering practices aren't what I was meant to do.</p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <section>
-        <div class="container" id="second">
-          <div class="row align-items-center">
-            <div class="col-lg-6 order-lg-1">
-              <div class="p-5">
-                <img id="boulder" class="img-fluid rounded-circle" src="img/boulder.jpg" alt="">
-                <img id="beach" class="img-fluid rounded-circle non-display" src="img/beach.jpg" alt"">
+        <section>
+          <div class="container" id="pastSecond">
+            <div class="row align-items-center">
+              <div class="col-lg-6 order-lg-1">
+                <div class="p-5">
+                  <img id="boulder" class="img-fluid rounded-circle" src="img/boulder.jpg" alt="">
+                  <img id="pnw" class="img-fluid rounded-circle non-display" src="img/pnw.jpg" alt"">
+                </div>
               </div>
-            </div>
-            <div class="col-lg-6 order-lg-2">
-              <div class="p-5">
-                <h2 id="movingHead" class="display-4">Then embarked on a journey to find something new...</h2>
-                <p id="movingP" class="non-display">I spread my wings from everything I knew in Eastern Iowa, and found myself in Oregon.</p>
+              <div class="col-lg-6 order-lg-2">
+                <div class="p-5">
+                  <h2 id="movingHead" class="display-4">Then embarked on a journey to find something new...</h2>
+                  <p id="movingP" class="non-display">I spread my wings from everything I knew in Eastern Iowa, and found myself in Oregon.</p>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <section>
-        <div class="container" id="third">
-          <div class="row align-items-center">
-            <div class="col-lg-6 order-lg-2">
-              <div class="p-5">
-                <img id="academy" class="img-fluid non-display" src="img/theTechAcademy.png" alt="">
-                <img id="forest" class="img-fluid rounded-circle" src="img/GiffordPinchot.jpg" alt="">
+        <section>
+          <div class="container" id="pastThird">
+            <div class="row align-items-center">
+              <div class="col-lg-6 order-lg-2">
+                <div class="p-5">
+                  <img id="academy" class="img-fluid non-display" src="img/theTechAcademy.png" alt="">
+                  <img id="forest" class="img-fluid rounded-circle" src="img/GiffordPinchot.jpg" alt="">
+                </div>
               </div>
-            </div>
-            <div class="col-lg-6 order-lg-1">
-              <div class="p-5">
-                <h2 id="portlandHead" class="display-4">In my search through the silicon forest...</h2>
-                <p id="portlandP" class="non-display">I found The Tech Academy, which taught me how to make things like this website.</p>
+              <div class="col-lg-6 order-lg-1">
+                <div class="p-5">
+                  <h2 id="portlandHead" class="display-4">In my search through the silicon forest...</h2>
+                  <p id="portlandP" class="non-display">I found The Tech Academy, which taught me how to make things like this website.</p>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <section>
-        <div class="container" id="fourth">
-          <div class="row align-items-center">
-            <div class="col-lg-6 order-lg-1">
-              <div class="p-5">
-                <img id="rockyMountain" class="img-fluid rounded-circle" src="img/RMNP.jpg" alt="">
-                <img id="blackHole" class="img-fluid rounded-circle non-display" src="img/blackHole.jpg" alt="">
+        <section>
+          <div class="container" id="pastFourth">
+            <div class="row align-items-center">
+              <div class="col-lg-6 order-lg-1">
+                <div class="p-5">
+                  <img id="beach" class="img-fluid rounded-circle" src="img/beach.jpg" alt="">
+                  <img id="blackHole" class="img-fluid rounded-circle non-display" src="img/blackHole.jpg" alt="">
+                </div>
               </div>
-            </div>
-            <div class="col-lg-6 order-lg-2">
-              <div class="p-5">
-                <h2 id="gravityHead" class="display-4">Join me on the rest of my journey...</h2>
-                <p id="gravityP" class="non-display">As I push forward, in pursuit of Universal Gravity.</p>
+              <div class="col-lg-6 order-lg-2">
+                <div class="p-5">
+                  <h2 id="godHead" class="display-4">While I was in Oregon, I also found myself...</h2>
+                  <p id="godP" class="non-display">Then moved back to the family farm in the midwest to use what I learned.</p>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
-    </div><!-- /#past -->
+        </section>
+      </div><!-- /#past -->
 
+      <div class="container" id="present">
+        <section>
+          <div class="container" id="presentFirst">
+            <div class="row align-items-center">
+              <div class="col-lg-6 order-lg-2">
+                <div class="p-5">
+                  <img id="newAgenda" class="img-fluid rounded-circle" src="img/badlands.jpg" alt="">
+                  <img id="return" class="img-fluid rounded-circle non-display" src="img/UofI.jpg" >
+                </div>
+              </div>
+              <div class="col-lg-6 order-lg-1">
+                <div class="p-5 history-row">
+                  <div>
+                    <h2 id="returnHead" class="display-4">First thing on my new agenda.</h1>
+                    <p id="returnP" class="non-display">Fall 2018 I will be returning to the University of Iowa, and triple majoring in Physics, with Chemistry and Mathematics.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div class="container" id="presentSecond">
+            <div class="row align-items-center">
+              <div class="col-lg-6 order-lg-1">
+                <div class="p-5">
+                  <img id="trees" class="img-fluid rounded-circle" src="img/trees.jpg" alt="">
+                  <img id="field" class="img-fluid rounded-circle non-display" src="img/field.jpg" alt"">
+                </div>
+              </div>
+              <div class="col-lg-6 order-lg-2">
+                <div class="p-5">
+                  <h2 id="permaHead" class="display-4">Next on the agenda...</h2>
+                  <p id="permaP" class="non-display">I will be working to modernize my parents farm, investing time in infrastructure necessary for diverse permaculture.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div class="container" id="presentThird">
+            <div class="row align-items-center">
+              <div class="col-lg-6 order-lg-2">
+                <div class="p-5">
+                  <img id="journey" class="img-fluid rounded-circle" src="img/RMNP.jpg" alt="">
+                  <img id="UCBoulder" class="img-fluid rounded-circle non-display" src="img/UCBoulder.jpg" alt="">
+                </div>
+              </div>
+              <div class="col-lg-6 order-lg-1">
+                <div class="p-5">
+                  <h2 id="journeyHead" class="display-4">Join me on the rest of my journey...</h2>
+                  <p id="journeyP" class="non-display">As I intend to spend the rest of my life in pursuit of a functional theory of Universal Gravity.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div class="container" id="presentFourth">
+            <div class="row align-items-center">
+              <div class="col-lg-6 order-lg-1">
+                <div class="p-5">
+                  <img id="midwest" class="img-fluid rounded-circle" src="img/corn.jpg" alt="">
+                  <img id="horticulture" class="img-fluid rounded-circle non-display" src="img/veggies.jpg" alt="">
+                </div>
+              </div>
+              <div class="col-lg-6 order-lg-2">
+                <div class="p-5">
+                  <h2 id="horticultureHead" class="display-4">While still in the Midwest for undergrad</h2>
+                  <p id="horticultureP" class="non-display">I will be working with and for the people, by aiming to repopularize small-scale diverse horticulture, especially within urban settings.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div><!-- /#present -->
+    </div><!-- /#info -->
 
     <!-- Footer -->
     <footer class="py-5 bg-black">
@@ -145,44 +226,14 @@
         <p class="m-0 text-center text-white small">Copyright &copy; Jeremiah Ziskovsky 2018</p>
       </div>
       <!-- /.container -->
-    </footer>
+    </footer><!-- /Footer -->
 
     <!-- jQuery first, then Tether, then Bootstrap JS. -->
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 
-    <script type="text/javascript">
-
-      //First past image toggle
-      $('#first').click(function(){
-        $('#pentacrest').toggleClass('non-display');
-        $('#fiber').toggleClass('non-display');
-        $('#UofIHead').toggleClass('non-display');
-        $('#UofIP').toggleClass('non-display');
-      });
-      //Second past image toggle
-      $('#second').click(function(){
-        $('#boulder').toggleClass('non-display');
-        $('#beach').toggleClass('non-display');
-        $('#movingHead').toggleClass('non-display');
-        $('#movingP').toggleClass('non-display');
-      });
-      //Fourth past image toggle
-      $('#third').click(function(){
-        $('#academy').toggleClass('non-display');
-        $('#forest').toggleClass('non-display');
-        $('#portlandHead').toggleClass('non-display');
-        $('#portlandP').toggleClass('non-display');
-      });
-      //Fourth past image toggle
-      $('#fourth').click(function(){
-        $('#rockyMountain').toggleClass('non-display');
-        $('#blackHole').toggleClass('non-display');
-        $('#gravityHead').toggleClass('non-display');
-        $('#gravityP').toggleClass('non-display');
-      });
-    </script>
+    <script type="text/javascript" src="./js/main.js"></script>
 
   </body>
 
