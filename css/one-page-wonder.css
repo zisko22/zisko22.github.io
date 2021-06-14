@@ -36,7 +36,7 @@ h6 {
 .navbar-custom {
   padding-top: 1rem;
   padding-bottom: 1rem;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 .navbar-custom .navbar-brand {
@@ -54,14 +54,14 @@ h6 {
 }
 
 header.masthead {
-  position: relative;
+  position: static;
   overflow: hidden;
   padding-top: calc(7rem + 72px);
   padding-bottom: 7rem;
-  background: url("../img/nightSky.jpeg");
+  background: url("../img/NovemberBeachset.jpg");
   background-repeat: no-repeat;
   background-position: center center;
-  background-attachment: scroll;
+  background-attachment: fixed;
   background-size: cover;
 }
 
